@@ -1,5 +1,19 @@
 .benefits {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.benefits__item {
+    width: 354px;
+    height: 404px;
+    display: block;
+    margin-right: 0px;
+}
+
+.benefits {
+    display: flex;
     flex-wrap: wrap;
     gap: 30px;
 

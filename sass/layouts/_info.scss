@@ -3,6 +3,12 @@
     display: flex;
     gap: 50px;
     align-items: center;
+
+    @media screen and (max-width:1199.5px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
 }
 
 .info__link {
@@ -24,6 +30,11 @@
         color: var(--focus-hover-color);
         fill: var(--focus-hover-color);
         background-color: var(--active-color);
+    }
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 0;
+        padding-top: 0;
     }
 }
 

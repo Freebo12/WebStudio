@@ -9,14 +9,40 @@
 
     color: var(--active-color);
     margin-bottom: 20px;
+    text-align: center;
+
+    @media screen and (min-width:1200px) {
+        text-align: start;
+    }
 }
 
 .holder__container {
     display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:1200px) {
+        flex-direction: row;
+    }
 }
 
 .holder__label {
-    margin-right: 12px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:479.5px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width:768px) {
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 12px;
+        margin-bottom: 0px;
+    }
 }
 
 .holder__input {
@@ -24,7 +50,7 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--brand-color);
-    width: 358px;
+    width: 450px;
     height: 50px;
     border-color: #ffffff4d;
     padding-left: 16px;
@@ -36,6 +62,15 @@
     &:hover,
     &:focus {
         border-color: var(--focus-hover-color);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 358px;
+
+    }
+
+    @media screen and (max-width:479.5px) {
+        width: 290px;
     }
 }
 
@@ -54,6 +89,10 @@
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
 
     &:hover,
     &:focus {

@@ -1,7 +1,13 @@
 .aside {
-    margin-right: 70px;
-    flex-grow: 1;
-    margin-right: 93px;
+    margin-bottom: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-bottom: 0px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 0px;
+    }
 
     .aside__tittle {
         font-style: normal;
@@ -12,11 +18,28 @@
         text-transform: uppercase;
         color: var(--active-color);
         margin-bottom: 20px;
+        text-align: center;
+
+        @media screen and (min-width:1200px) {
+            text-align: left;
+        }
+
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-right: 70px;
+        flex-grow: 1;
+        margin-right: 93px;
     }
 
     .aside__list {
         display: flex;
         gap: 10px;
+        justify-content: center;
+
+        @media screen and (min-width:1200px) {
+            justify-content: flex-start;
+        }
     }
 
     .aside__link {
@@ -41,6 +64,4 @@
     .aside__icon {
         fill: var(--active-color);
     }
-
-
 }

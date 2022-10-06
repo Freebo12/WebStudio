@@ -9,6 +9,16 @@
     letter-spacing: 0.03em;
     color: var(--titlle-color);
 
+    max-width: 330px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media screen and (min-width:768px) {
+        max-width: 1200px;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
     .items__button {
         background-color: var(--btn-background);
         color: var(--titlle-color);
