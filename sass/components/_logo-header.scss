@@ -5,7 +5,6 @@
     color: var(--focus-hover-color);
     line-height: calc(31 / 26);
     text-decoration: none;
-    margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
     display: block;
@@ -14,6 +13,10 @@
     &:focus {
         background-color: var(--active-color);
         color: var(--focus-hover-color);
+    }
+
+    @media screen and (min-width:768px) {
+        margin-right: 93px;
     }
 }
 
