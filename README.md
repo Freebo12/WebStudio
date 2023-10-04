@@ -1,2 +1,2 @@
 WebStudio 
-[HTML,CSS]
+[Effective solutions for your business]
